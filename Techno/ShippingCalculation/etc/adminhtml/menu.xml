@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Copyright © Techno, Inc. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="Techno_ShippingCalculation::menu_shippingcalculation" module="Techno_ShippingCalculation" sortOrder="9999" title="Shipping and Tax" resource="Techno_ShippingCalculation::shipping_tax"/>
+		<add id="Techno_ShippingCalculation::setting" title="Shipping Calculation" module="Techno_ShippingCalculation" sortOrder="110" parent="Techno_ShippingCalculation::menu_shippingcalculation" action="adminhtml/system_config/edit/section/shippingcalculation" resource="Techno_ShippingCalculation::shippingcalculation"/>
+	</menu>
+</config>
